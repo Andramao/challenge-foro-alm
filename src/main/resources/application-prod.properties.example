@@ -1,0 +1,14 @@
+spring.application.name = foroAlm
+
+# ARCHIVO DE EJEMPLO PARA PRODUCCIÓN
+# Crea una copia de este archivo llamada 'application-prod.properties'
+# y completa los valores con tus credenciales reales o variables de entorno.
+
+spring.datasource.url=${DB_URL}
+spring.datasource.username=${DB_USER}
+spring.datasource.password=${DB_PASSWORD}
+spring.jpa.hibernate.ddl-auto=validate
+
+# Secret del JWT (usa una cadena larga y aleatoria en producción)
+api.security.secret=${JWT_SECRET}
+
